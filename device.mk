@@ -32,6 +32,9 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Inherit from motorola sm8475-common
 $(call inherit-product, device/motorola/sm8475-common/sm8475.mk)
 
+# Inherit from motorola IfaaService
+$(call inherit-product, vendor/motorola/IfaaService/IfaaService.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResEqs \
